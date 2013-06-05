@@ -23,7 +23,6 @@ import android.os.Message;
 import android.util.Log;
 
 
-
 public final class Backend extends HandlerThread {
 	
 	static final int OAUTH = 6100000;
@@ -118,7 +117,7 @@ public final class Backend extends HandlerThread {
          };
          StatusesAPI api = new StatusesAPI(accessToken);
          //api.update("Test QiTu","","",listener);
-         api.userTimeline("ÆåÅÆÐÂÎÅ", (long)0, (long)0, 50, 1, false, WeiboAPI.FEATURE.ALL, false, listener);
+         api.userTimeline("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", (long)0, (long)0, 50, 1, false, WeiboAPI.FEATURE.ALL, false, listener);
 	
 		return true;
 	}
