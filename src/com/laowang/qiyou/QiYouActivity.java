@@ -1,6 +1,5 @@
 package com.laowang.qiyou;
 
-
 import com.weibo.sdk.android.Oauth2AccessToken;
 import com.weibo.sdk.android.Weibo;
 import com.weibo.sdk.android.WeiboAuthListener;
@@ -79,7 +78,7 @@ public class QiYouActivity extends Activity implements OnGestureListener, OnTouc
 				 Log.i("Main", msg.toString());
 				 switch(msg.what){
 				 case Backend.AUTHRIZED:
-					 Toast.makeText(QiYouActivity.this, "ÈÏÖ¤³É¹¦", Toast.LENGTH_SHORT)
+					 Toast.makeText(QiYouActivity.this, "ï¿½ï¿½Ö¤ï¿½É¹ï¿½", Toast.LENGTH_SHORT)
 	                 .show();
 					 mBackend.reload();
 					 break;
@@ -87,7 +86,7 @@ public class QiYouActivity extends Activity implements OnGestureListener, OnTouc
 					 update();
 					 break;
 				 case Backend.NO_MORE:
-					 Toast.makeText(QiYouActivity.this, "Õâ±ßÃ»ÓÐÁË", Toast.LENGTH_SHORT)
+					 Toast.makeText(QiYouActivity.this, "ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½", Toast.LENGTH_SHORT)
 	                 .show();
 					 break;
 				 default:
@@ -103,7 +102,7 @@ public class QiYouActivity extends Activity implements OnGestureListener, OnTouc
 		mWeibo.authorize(QiYouActivity.this, new AuthDialogListener());
 		
 		Backend.picture = BitmapFactory.decodeResource(getResources(), R.drawable.sinaweibo);
-		Backend.text = "ÐÂÀËÌåÓýÆåÅÆÆµµÀ¹Ù·½Î¢²©£¬×¨ÒµÓÚ¸÷ÏîÆåÅÆÀàÈüÊÂ±¨µÀ";
+		Backend.text = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½Ù·ï¿½Î¢ï¿½ï¿½ï¿½ï¿½×¨Òµï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½";
 	}
 	
 	@Override
@@ -123,7 +122,7 @@ public class QiYouActivity extends Activity implements OnGestureListener, OnTouc
 	@Override 
 	public boolean onTouch(View v, MotionEvent event) { 	
 	// OnGestureListener will analyzes the given motion event
-	//ÕâÀïµÄmGestureDetectorÊÇ¸ÃActivityµÄÒ»¸öÊôÐÔ.ÔÚ¹¹Ôì·½·¨ÖÐÊµÀý»¯»òÔÚoncreate()·½·¨ÖÐÊµÀý»¯.
+	//ï¿½ï¿½ï¿½ï¿½ï¿½mGestureDetectorï¿½Ç¸ï¿½Activityï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½Ú¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½oncreate()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½.
 	Log.i("Main",event.toString());	
 	return mGestureDetector.onTouchEvent(event); 
 	} 
@@ -187,8 +186,8 @@ public class QiYouActivity extends Activity implements OnGestureListener, OnTouc
 		}		
         int bmpwidth = bmp.getWidth();
 		int bmpheight = bmp.getHeight();
-	    int screenWidth;//ÆÁÄ»¿í¶È 
-	    //int screenHeight;//ÆÁÄ»¸ß¶È 
+	    int screenWidth;//ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ 
+	    //int screenHeight;//ï¿½ï¿½Ä»ï¿½ß¶ï¿½ 
 	    WindowManager windowManager = getWindowManager(); 
 	    Display display = windowManager.getDefaultDisplay(); 
 	    screenWidth = display.getWidth(); 
